@@ -10,23 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.zahidali.forecast_final.Splash">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.zahidali.forecast_final.MainActivity" />
-        <activity android:name="com.example.zahidali.forecast_final.All_Products_Design" />
-        <activity android:name="com.example.zahidali.forecast_final.ProductDetails" />
-        <activity android:name="com.example.zahidali.forecast_final.Sub_Categories" />
-        <activity android:name="com.example.zahidali.forecast_final.My_Cart" />
-        <activity android:name="com.example.zahidali.forecast_final.Check_Out" />
-        <activity android:name="com.example.zahidali.forecast_final.Categery" />
-        <activity android:name="com.example.zahidali.forecast_final.Nothing" />
-        <activity android:name="com.example.zahidali.forecast_final.FullScreenImage" />
-        <activity android:name="com.example.zahidali.forecast_final.Avail"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".All_Products_Design" />
+        <activity android:name=".ProductDetails" />
+        <activity android:name=".Sub_Categories" />
+        <activity android:name=".My_Cart" />
+        <activity android:name=".Check_Out" />
+        <activity android:name=".Categery" />
+        <activity android:name=".Nothing" />
+        <activity android:name=".FullScreenImage" />
+        <activity android:name=".Avail"></activity>
     </application>
 
 
