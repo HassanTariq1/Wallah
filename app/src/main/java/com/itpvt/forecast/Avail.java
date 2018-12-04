@@ -13,7 +13,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import static com.example.zahidali.forecast_final.Nothing.openFacebook;
+import static com.itpvt.forecast.Sub_Categories.openFacebook;
+
 
 public class Avail extends AppCompatActivity {
 Button btnn;
