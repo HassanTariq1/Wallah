@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="madame.itpvt.com.madame1234.Check_Out"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <include layout="@layout/toolbar">
+
+        </include>
+
+        <LinearLayout
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:weightSum="3"
+            android:orientation="vertical">
+                        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+android:textColor="#6b9e3a"
+
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="1.NAME AND ADDRESS"
+
+                android:textSize="18sp" />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/cfname"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+android:textSize="18sp"
+                android:layout_marginTop="10dp"
+android:background="@drawable/white_border"
+                android:paddingLeft="7dp"
+                android:hint="First name"
+                android:inputType="text"
+
+             />
+
+
+
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/clastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last name"
+android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/white_border"
+                    android:paddingLeft="7dp"
+                    android:inputType="text"
+                 />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/uemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/white_border"
+                    android:paddingLeft="7dp"                    android:inputType="textEmailAddress"
+
+
+
+                 />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+
+                    android:hint="Address"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_border"
+                    android:paddingLeft="7dp"
+                    android:inputType="text"
+                   />
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/white_border"
+                    android:paddingLeft="7dp"                    android:inputType="text"
+
+
+
+                />
+
+
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State/Province"
+                    android:inputType="text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/white_border"
+                    android:paddingLeft="7dp"
+
+
+                />
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="TelePhone"
+
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:background="@drawable/white_border"
+                    android:paddingLeft="7dp"                    android:inputType="number"
+                   />
+
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Only Available In pakistan"
+                    android:inputType="text"
+                    android:textColor="#000"
+
+android:layout_marginTop="10dp"
+
+
+             />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/fax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fax"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:background="@drawable/white_border"
+                android:paddingLeft="7dp"
+                android:inputType="text"
+               />
+
+
+
+
+
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:text="2. SHIPPING METHOD"-->
+            <!--android:textColor="@color/jumbo"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:text="Flat Rate-->
+            <!--Fixed PKR150"-->
+            <!--android:textColor="@color/jumbo"-->
+            <!--android:textSize="12sp" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+
+android:textStyle="bold"
+android:textColor="#6b9e3a"
+                android:text="2. PAYMENT METHOD"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+
+android:layout_weight="1"
+
+                android:text="Cash On Delivery"
+android:textColor="#000"
+                android:textSize="14sp" />
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="22dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:id="@+id/review"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:text="REVIEW YOUR ORDER"-->
+            <!--android:background="@color/jumbo" />-->
+            <Button
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_border"
+
+
+                android:text="PLACE ORDER"
+android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"
+
+android:background="#fff"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+
+                    android:text="ORDER ID:"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/code"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+
+                    android:text="Total Price:"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/total_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="bold"
+
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+
+                    android:text="Shipping Flat Fix Price:"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/shipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="bold"
+
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:text="Grand Total:"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Grand_Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/done"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:text="Proceed"
+                android:background="@drawable/black_border"
+android:textColor="#fff"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

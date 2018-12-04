@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f8fcf5"
+    android:id="@+id/scroll"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8fcf5"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/scroll"
+
+
+        >
+
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/slider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_marginEnd="2dp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/toolbar" />-->
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/black"-->
+        <!--android:layout_height="1dp"/>-->
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginEnd="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/include"
+                app:layout_constraintTop_toBottomOf="@+id/include">
+
+            </com.daimajia.slider.library.SliderLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/model_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <include
+                layout="@layout/footers"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="82dp" />
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/whatsapp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/whatsapp"
+            app:backgroundTint="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/face"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:src="@drawable/faceeee"
+            app:backgroundTint="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/whatsapp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
